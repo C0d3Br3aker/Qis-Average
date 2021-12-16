@@ -1,0 +1,20 @@
+{
+  "name": "Qis Average",
+  "description": "Automatically calculates the average grade in QIS for HS Trier",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://qis.hochschule-trier.de/qisserver/rds?state=notenspiegelStudent&next=list.vm*"
+      ],
+      "js": ["jquery.js", "plugin.js"]
+    }
+  ],
+  "icons": {
+    "32": "/icons/32.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  }
+}
