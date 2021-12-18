@@ -6,5 +6,11 @@
   "appDesc": {
     "message": "Automatically calculates the average grade in QIS for HS Trier.",
     "description": "Automatically calculates the average grade in QIS for HS Trier:\nIt multiplies each grade with the respective ects points, adds everything up and divides the result by the sum of all ects points.\n\nThe result will be displayed directly in grade table."
+  },
+  "avg": {
+    "message": "Grade average"
+  },
+  "gradeCounter": {
+    "message": "modules passed"
   }
 }

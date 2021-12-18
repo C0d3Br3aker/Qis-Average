@@ -6,5 +6,11 @@
   "appDesc": {
     "message": "Berechnet automatisch die Durchschnittsnote in QIS für die HS Trier.",
     "description": "Berechnet automatisch die Durchschnittsnote in QIS für die HS Trier:\nEs multipliziert jede Note mit den jeweiligen ects-Punkten, addiert alles und teilt das Ergebnis durch die Summe aller ects-Punkte.\n\nDas Ergebnis wird direkt in der Notentabelle angezeigt."
+  },
+  "avg": {
+    "message": "Notendurchschnitt"
+  },
+  "gradeCounter": {
+    "message": "Module bestanden"
   }
 }

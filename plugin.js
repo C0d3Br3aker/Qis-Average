@@ -32,21 +32,11 @@ $(function () {
             }
         });
     let total = gradeAvg / ectsCounter;
-    const language = $('html').attr('lang');
-    let avgString, gradeCounterString;
-    if (language === "en") {
-        avgString = 'Grade average';
-        gradeCounterString = 'modules passed'
-    } else {
-        avgString = 'Notendurchschnitt';
-        gradeCounterString = 'Module bestanden';
-    }
-
     table.eq(1).find("tr:nth-child(2)").after($('<tr style="color: red;">' +
         '<td class="qis_kontoOnTop" valign="top" align="left">' +
         '</td>' +
         '<td class="qis_kontoOnTop" valign="top" colspan="2" align="left">' +
-        avgString + " (" + gradeAvg + "/" + ectsCounter + ")" +
+        chrome.i18n.getMessage("avg") + " (" + gradeAvg + "/" + ectsCounter + ")" +
         '</td>' +
         '<td class="qis_kontoOnTop" valign="top" align="center">' +
         parseFloat(total).toFixed(2) +
@@ -56,7 +46,7 @@ $(function () {
         '<td class="qis_kontoOnTop" valign="top" align="center">' +
         '</td>' +
         '<td class="qis_kontoOnTop" valign="top" align="center">' +
-        gradeCounter + " " + gradeCounterString +
+        gradeCounter + " " + chrome.i18n.getMessage("gradeCounter") +
         '</td>' +
         '<td class="qis_kontoOnTop" valign="top" align="center">' +
         '</td>' +
